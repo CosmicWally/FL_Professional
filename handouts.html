@@ -1,0 +1,35 @@
+---
+layout: default
+title: Handouts | Dr. Felicity Leonard DVM
+permalink: /handouts/
+---
+<main class="handouts-page">
+  <section aria-labelledby="handouts-title">
+    <div class="page-heading">
+      <p class="eyebrow"><span></span> Helpful resources</p>
+      <h1 id="handouts-title">Handouts</h1>
+    </div>
+    <div class="table-wrap">
+      <table class="handouts-table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for handout in site.data.handouts %}
+            <tr>
+              <th scope="row">{{ handout.name | escape }}</th>
+              <td>{{ handout.description | escape }}</td>
+              <td><a class="download-link" href="{{ handout.file | relative_url }}" download aria-label="Download {{ handout.name | escape }}">Download <span aria-hidden="true">↓</span></a></td>
+            </tr>
+          {% else %}
+            <tr class="empty-row"><td colspan="3">Handouts will appear here.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>

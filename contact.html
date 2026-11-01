@@ -1,0 +1,35 @@
+---
+layout: default
+title: Contact | Dr. Felicity Leonard DVM
+permalink: /contact/
+---
+<main class="contact-page">
+  <section class="contact-layout" aria-labelledby="contact-title">
+    <div class="contact-copy">
+      <p class="eyebrow"><span></span> Get in touch</p>
+      <h1 id="contact-title">contact information</h1>
+      <ul class="contact-details">
+        <li>
+          <strong>Email:</strong>
+          {% if site.data.site.email_link.size > 0 %}
+            <a href="mailto:{{ site.data.site.email_link }}">{{ site.data.site.email }}</a>
+          {% else %}
+            <span>{{ site.data.site.email }}</span>
+          {% endif %}
+        </li>
+        <li>
+          <strong>Phone number:</strong>
+          {% if site.data.site.phone_link.size > 0 %}
+            <a href="tel:{{ site.data.site.phone_link }}">{{ site.data.site.phone }}</a>
+          {% else %}
+            <span>{{ site.data.site.phone }}</span>
+          {% endif %}
+        </li>
+        <li><strong>Address:</strong> <span>{{ site.data.site.address }}</span></li>
+      </ul>
+    </div>
+    <div class="contact-image-wrap">
+      <img src="{{ site.data.site.contact_image }}" alt="{{ site.data.site.contact_image_alt | escape }}">
+    </div>
+  </section>
+</main>
