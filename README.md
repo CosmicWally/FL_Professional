@@ -19,6 +19,10 @@ Open the local URL printed by Jekyll, usually `http://127.0.0.1:4000`.
 
 - Update the contact details and image URLs in `_data/site.yml`. Replace the
     contact placeholders before publishing.
+- To use your own photos, upload the files into `assets/images/`, then set
+    `home_image` and/or `contact_image` in `_data/site.yml` to the matching
+    site path, such as `/assets/images/clinic-dog.jpg`. Update the corresponding
+    `home_image_alt` or `contact_image_alt` value to describe the photo.
 - To add a handout, upload its file into `assets/handouts/`, then add an entry
     to `_data/handouts.yml` with its name, description, and path:
 
