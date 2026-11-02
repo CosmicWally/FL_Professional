@@ -208,7 +208,10 @@ h2 em { color: var(--green); font-weight: 400; }
 .handouts-table tbody th { color: var(--green-dark); font-size: 13px; font-weight: 700; }
 .handouts-table tbody td { color: #647168; font-size: 12px; line-height: 1.7; }
 .handouts-table tbody td:last-child { white-space: nowrap; }
+.handouts-table tbody tr:not(.empty-row) { position: relative; cursor: pointer; }
 .download-link { display: inline-flex; align-items: center; gap: 8px; color: var(--green); font-size: 11px; font-weight: 700; }
+.download-link::after { position: absolute; z-index: 1; inset: 0; content: ""; }
+.download-link:focus-visible::after { outline: 2px solid var(--coral); outline-offset: -2px; }
 .download-link span { color: var(--coral); font-size: 15px; }
 .download-link:hover { color: var(--coral); }
 .empty-row td { color: var(--muted); font-size: 12px; }
