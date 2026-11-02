@@ -1,9 +1,9 @@
-[ - name: Dog and Cat Itch and Pruritus Scale
-        description: oof ouch I'm so itchy
-        file: /assets/handouts/Dog and Cat Itch and Pruritus Scale.pdf
- - name: Dr. Leonard's Litterbox Guide
-        description: Litterbox tips and tricks
-        file: /assets/handouts/Dr. Leonard's Litterbox Guide.pdf
- - name: Pet Insurance Information
-        description: Information about pet insurance
-        file: /assets/handouts/Pet Insurance Information.pdf]
+- name: Dog and Cat Itch and Pruritus Scale
+  description: oof ouch I'm so itchy
+  file: /assets/handouts/Dog and Cat Itch and Pruritus Scale.pdf
+- name: Dr. Leonard's Litterbox Guide
+  description: Litterbox tips and tricks
+  file: /assets/handouts/Dr. Leonard's Litterbox Guide.pdf
+- name: Pet Insurance Information
+  description: Information about pet insurance
+  file: /assets/handouts/Pet Insurance Information.pdf
